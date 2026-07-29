@@ -102,7 +102,7 @@ export default function Home() {
                   <Sparkles className="w-4 h-4 text-primary" />
                   <span className="text-sm font-bold text-primary tracking-wide">AI-Powered Mentorship</span>
                 </div>
-                <h1 className="text-5xl sm:text-6xl lg:text-7xl font-extrabold leading-[1.05] tracking-tight hero-enter-up hero-enter-up-delay-2">
+                <h1 className="text-[2.5rem] sm:text-6xl lg:text-7xl font-extrabold leading-[1.05] tracking-tight hero-enter-up hero-enter-up-delay-2">
                   Stop <span className="text-gradient">Consuming</span><br />Start <span className="text-gradient">Becoming</span>
                 </h1>
                 <p className="text-lg lg:text-xl text-muted-foreground leading-relaxed max-w-lg font-light hero-enter-up hero-enter-up-delay-3">
@@ -110,12 +110,12 @@ export default function Home() {
                 </p>
               </div>
               <div className="flex flex-col sm:flex-row gap-4 pt-2 hero-enter-up hero-enter-up-delay-4">
-                <Button asChild className="btn-premium text-primary-foreground uppercase font-bold text-base lg:text-lg py-7 px-8 group rounded-xl btn-press shadow-lg shadow-primary/25">
+                <Button asChild className="btn-premium text-primary-foreground uppercase font-bold text-sm sm:text-base lg:text-lg py-5 sm:py-7 px-6 sm:px-8 group rounded-xl btn-press shadow-lg shadow-primary/25">
                   <a href={import.meta.env.VITE_START_JOURNEY_URL}>
                     <span className="flex items-center">Start Your Journey<ArrowRight className="ml-2 group-hover:translate-x-1 transition-transform duration-200" /></span>
                   </a>
                 </Button>
-                <Button asChild variant="outline" className="border-2 border-border text-foreground hover:bg-secondary/80 uppercase font-bold text-base lg:text-lg py-7 px-8 rounded-xl btn-press">
+                <Button asChild variant="outline" className="border-2 border-border text-foreground hover:bg-secondary/80 uppercase font-bold text-sm sm:text-base lg:text-lg py-5 sm:py-7 px-6 sm:px-8 rounded-xl btn-press">
                   <a href={import.meta.env.VITE_TRY_DEMO_URL}>Try Demo</a>
                 </Button>
               </div>
@@ -123,11 +123,11 @@ export default function Home() {
             <div className="lg:col-span-7 relative hero-enter-right perspective-container">
               <div className="relative group">
                 <div className="absolute -inset-6 bg-gradient-to-r from-primary/20 via-primary/10 to-primary/5 rounded-3xl blur-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-700"></div>
-                <div className="relative h-96 sm:h-[500px] lg:h-[620px] rounded-3xl overflow-hidden shadow-2xl border border-primary/10 hero-image-3d">
+                <div className="relative h-64 sm:h-[500px] lg:h-[620px] rounded-3xl overflow-hidden shadow-2xl border border-primary/10 hero-image-3d">
                   <img src="https://d2xsxph8kpxj0f.cloudfront.net/310519663600664020/7YcsuUqY2fWM69qR8ZaZus/hero-real-mentor-BSQCKNyoQSm76LY7ekrpRA.webp" alt="Mentor AI - Focused Professional" className="w-full h-full object-cover group-hover:scale-[1.03] transition-transform duration-700" />
                   <div className="absolute inset-0 bg-gradient-to-t from-background/50 via-background/5 to-transparent pointer-events-none"></div>
                 </div>
-                <div className="absolute -bottom-6 left-2 sm:-bottom-8 sm:-left-8 lg:-bottom-10 lg:-left-10 bg-card/95 backdrop-blur-md border border-border/60 rounded-2xl p-4 sm:p-5 w-[240px] sm:w-[280px] lg:w-[320px] card-shine card-3d card-float-entrance" style={{ boxShadow: "0 30px 80px -20px oklch(0.12 0.04 258 / 0.4), 0 10px 20px -5px oklch(0.12 0.04 258 / 0.2)" }}>
+                <div className="absolute -bottom-4 left-2 sm:-bottom-8 sm:-left-8 lg:-bottom-10 lg:-left-10 bg-card/95 backdrop-blur-md border border-border/60 rounded-2xl p-3 sm:p-5 w-[180px] sm:w-[280px] lg:w-[320px] card-shine card-3d card-float-entrance" style={{ boxShadow: "0 30px 80px -20px oklch(0.12 0.04 258 / 0.4), 0 10px 20px -5px oklch(0.12 0.04 258 / 0.2)" }}>
                   <div className="flex items-center gap-2.5 mb-3">
                     <div className="relative">
                       <div className="w-2.5 h-2.5 rounded-full bg-green-500"></div>
@@ -156,9 +156,9 @@ export default function Home() {
       <div className="py-2"><div className="section-gradient-line reveal"></div></div>
 
       {/* Problem Section */}
-      <section className="relative py-24 bg-secondary/5">
+      <section className="relative py-16 lg:py-24 bg-secondary/5">
         <div className="container">
-          <div className="max-w-3xl mx-auto text-center mb-16 reveal">
+          <div className="max-w-3xl mx-auto text-center mb-10 lg:mb-16 reveal">
             <SectionLabel>The Problem</SectionLabel>
             <h2 className="text-4xl lg:text-5xl font-bold mb-6 reveal-words"><span className="word">You're</span> <span className="word">Stuck</span> <span className="word">in</span> <span className="word">a</span> <span className="word">Loop</span></h2>
             <p className="text-lg text-muted-foreground leading-relaxed">
@@ -185,16 +185,16 @@ export default function Home() {
       <div className="py-2"><div className="section-gradient-line reveal"></div></div>
 
       {/* Solution Section */}
-      <section className="relative py-24">
+      <section className="relative py-16 lg:py-24">
         <div className="container">
-          <div className="max-w-3xl mx-auto text-center mb-16 reveal">
+          <div className="max-w-3xl mx-auto text-center mb-10 lg:mb-16 reveal">
             <SectionLabel>The Solution</SectionLabel>
             <h2 className="text-4xl lg:text-5xl font-bold mb-6 reveal-words"><span className="word">Mentor</span> <span className="word">AI</span> <span className="word">Changes</span> <span className="word">the</span> <span className="word">Game</span></h2>
             <p className="text-lg text-muted-foreground leading-relaxed">
               We don't motivate you. We challenge you. We don't give advice. We hold you accountable.
             </p>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-12 items-center">
             <div className="space-y-5 reveal-left">
               {[
                 { num: "01", title: "Real Challenges", desc: "Personalized daily tasks designed for your specific goals, not generic motivation." },
@@ -213,7 +213,7 @@ export default function Home() {
                 </div>
               ))}
             </div>
-            <div className="relative h-[420px] rounded-2xl overflow-hidden shadow-xl reveal-right reveal-clip">
+            <div className="relative h-64 sm:h-[420px] rounded-2xl overflow-hidden shadow-xl reveal-right reveal-clip">
               <img src="https://d2xsxph8kpxj0f.cloudfront.net/310519663600664020/7YcsuUqY2fWM69qR8ZaZus/person-working-deep-focus-FBE2fcaSFCWzjHPDkEdAYd.webp" alt="Deep Focus Work" className="w-full h-full object-cover" />
               <div className="absolute inset-0 bg-gradient-to-t from-background/30 via-transparent to-transparent pointer-events-none"></div>
             </div>
@@ -224,9 +224,9 @@ export default function Home() {
       <div className="py-2"><div className="section-gradient-line reveal"></div></div>
 
       {/* Features Section */}
-      <section id="features" className="relative py-24 bg-secondary/5">
+      <section id="features" className="relative py-16 lg:py-24 bg-secondary/5">
         <div className="container">
-          <div className="text-center mb-16 reveal">
+          <div className="text-center mb-10 lg:mb-16 reveal">
             <SectionLabel>Features</SectionLabel>
             <h2 className="text-4xl lg:text-5xl font-bold reveal-words"><span className="word">Core</span> <span className="word">Features</span></h2>
           </div>
@@ -257,10 +257,10 @@ export default function Home() {
       <div className="py-2"><div className="section-gradient-line reveal"></div></div>
 
       {/* How It Works Section */}
-      <section className="relative py-28 bg-secondary/5 overflow-hidden">
+      <section className="relative py-16 lg:py-28 bg-secondary/5 overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-b from-primary/[0.02] via-transparent to-primary/[0.02]"></div>
         <div className="container relative z-10">
-          <div className="text-center mb-20 reveal">
+          <div className="text-center mb-10 lg:mb-20 reveal">
             <SectionLabel>Process</SectionLabel>
             <h2 className="text-4xl lg:text-5xl font-bold mb-5 reveal-words"><span className="word">How</span> <span className="word">It</span> <span className="word">Works</span></h2>
             <p className="text-lg text-muted-foreground max-w-xl mx-auto leading-relaxed">Five steps to transformation. No shortcuts, no excuses—just a system that holds you accountable.</p>
@@ -331,9 +331,9 @@ export default function Home() {
       <div className="py-2"><div className="section-gradient-line reveal"></div></div>
 
       {/* Mentors Showcase */}
-      <section id="mentors" className="relative py-24 bg-secondary/5">
+      <section id="mentors" className="relative py-16 lg:py-24 bg-secondary/5">
         <div className="container">
-          <div className="text-center mb-16 reveal">
+            <div className="text-center mb-10 lg:mb-16 reveal">
             <SectionLabel>Mentors</SectionLabel>
             <h2 className="text-4xl lg:text-5xl font-bold reveal-words"><span className="word">Choose</span> <span className="word">Your</span> <span className="word">Mentor</span></h2>
           </div>
@@ -345,7 +345,7 @@ export default function Home() {
               { name: "Life Strategist", desc: "Life Design Mentor", traits: ["Strategy", "Decision Making", "Legacy Building"], image: "team-collaboration" },
             ].map((mentor, idx) => (
               <div key={idx} className="group cursor-pointer reveal">
-                <div className="relative h-64 rounded-2xl overflow-hidden mb-4 shadow-md card-hover reveal-clip">
+                <div className="relative h-52 lg:h-64 rounded-2xl overflow-hidden mb-4 shadow-md card-hover reveal-clip">
                   <img
                     src={mentor.image === "person-meditating" ? "https://d2xsxph8kpxj0f.cloudfront.net/310519663600664020/7YcsuUqY2fWM69qR8ZaZus/person-meditating-EKzucDKsF65G8pL4A4ZhVc.webp" :
                          mentor.image === "person-fitness" ? "https://d2xsxph8kpxj0f.cloudfront.net/310519663600664020/7YcsuUqY2fWM69qR8ZaZus/person-fitness-LZ4UGFJZXMtyp5YTjB4avT.webp" :
@@ -372,9 +372,9 @@ export default function Home() {
       <div className="py-2"><div className="section-gradient-line reveal"></div></div>
 
       {/* Gamification Section */}
-      <section className="relative py-24">
+      <section className="relative py-16 lg:py-24">
         <div className="container">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-center">
             <div className="space-y-8 reveal-left">
               <div>
                 <SectionLabel>Gamification</SectionLabel>
@@ -402,7 +402,7 @@ export default function Home() {
                 ))}
               </div>
             </div>
-            <div className="relative h-96 lg:h-[480px] rounded-2xl overflow-hidden shadow-xl reveal-right reveal-clip">
+            <div className="relative h-64 sm:h-96 lg:h-[480px] rounded-2xl overflow-hidden shadow-xl reveal-right reveal-clip">
               <img src="https://d2xsxph8kpxj0f.cloudfront.net/310519663600664020/7YcsuUqY2fWM69qR8ZaZus/team-collaboration-nuKYotLiibb6Si4wh49vqW.webp" alt="Team Growth and Collaboration" className="w-full h-full object-cover" />
               <div className="absolute inset-0 bg-gradient-to-t from-background/30 via-transparent to-transparent pointer-events-none"></div>
             </div>
@@ -413,9 +413,9 @@ export default function Home() {
       <div className="py-2"><div className="section-gradient-line reveal"></div></div>
 
       {/* Testimonials Section */}
-      <section id="testimonials" className="relative py-24 bg-secondary/5">
+      <section id="testimonials" className="relative py-16 lg:py-24 bg-secondary/5">
         <div className="container">
-          <div className="text-center mb-16 reveal">
+          <div className="text-center mb-10 lg:mb-16 reveal">
             <SectionLabel>Testimonials</SectionLabel>
             <h2 className="text-4xl lg:text-5xl font-bold reveal-words"><span className="word">Real</span> <span className="word">Transformations</span></h2>
           </div>
@@ -452,7 +452,7 @@ export default function Home() {
       <div className="py-2"><div className="section-gradient-line reveal"></div></div>
 
       {/* CTA Section */}
-      <section className="relative py-28 overflow-hidden cta-glow">
+      <section className="relative py-16 lg:py-28 overflow-hidden cta-glow">
         <div className="absolute inset-0 bg-gradient-to-b from-primary/5 via-primary/10 to-primary/5"></div>
         <div className="absolute inset-0 [background-image:radial-gradient(circle_at_1px_1px,oklch(0.42_0.18_255/0.06)_1px,transparent_0)] [background-size:32px_32px]"></div>
         <div className="container relative z-10 text-center reveal-scale">
@@ -461,7 +461,7 @@ export default function Home() {
           <p className="text-lg text-muted-foreground mb-10 max-w-2xl mx-auto leading-relaxed">
             Stop consuming. Start becoming. Join thousands of users who are transforming their lives through discipline, accountability, and real challenges.
           </p>
-          <Button asChild className="btn-premium text-primary-foreground uppercase font-bold text-lg py-8 px-14 group text-xl rounded-xl shadow-xl shadow-primary/25 btn-press relative overflow-hidden">
+          <Button asChild className="btn-premium text-primary-foreground uppercase font-bold text-base lg:text-lg py-6 lg:py-8 px-8 lg:px-14 group text-lg lg:text-xl rounded-xl shadow-xl shadow-primary/25 btn-press relative overflow-hidden">
             <a href={import.meta.env.VITE_START_JOURNEY_URL}>
               <span className="flex items-center gap-3">
                 <Sparkles className="w-5 h-5" />
